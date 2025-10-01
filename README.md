@@ -8,7 +8,7 @@ This project simulates a simple stablecoin payment flow using Next.js + MUI.
 - Display confirmation details (amount, status, fee)
 
 ## Why
-This demo mimics how businesses can accept stablecoin payments with clean UI + API integration.
+This demo mimics how merchants can accept stablecoin payments with clean UI + API integration.
 
 ## Stack
 - Next.js (TypeScript)

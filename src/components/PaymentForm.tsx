@@ -20,14 +20,40 @@ export default function PaymentForm({ onPay }: { onPay: (amount: number, coin: s
         value={amount}
         onChange={(e) => setAmount(e.target.value)}
         required
-        sx={{ marginRight: 2 }}
+        sx={{ 
+          marginRight: 2,
+          '& .MuiOutlinedInput-root': {
+            '& fieldset': {
+              borderColor: 'white',
+            },
+            '&:hover fieldset': {
+              borderColor: 'white',
+            },
+            '&.Mui-focused fieldset': {
+              borderColor: 'white',
+            },
+          },
+        }}
       />
       <TextField
         select
         label="Coin"
         value={coin}
         onChange={(e) => setCoin(e.target.value)}
-        sx={{ marginRight: 2 }}
+        sx={{
+          marginRight: 2,
+          '& .MuiOutlinedInput-root': {
+            '& fieldset': {
+              borderColor: 'white',
+            },
+            '&:hover fieldset': {
+              borderColor: 'white',
+            },
+            '&.Mui-focused fieldset': {
+              borderColor: 'white',
+            },
+          }
+        }}
       >
         {coins.map((c) => (
           <MenuItem key={c} value={c}>

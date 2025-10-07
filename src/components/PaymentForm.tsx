@@ -61,7 +61,11 @@ export default function PaymentForm({ onPay }: { onPay: (amount: number, coin: s
           </MenuItem>
         ))}
       </TextField>
-      <Button variant="contained" type="submit">
+      <Button 
+        variant="contained" 
+        type="submit"
+        sx={{ height: 56 }}
+      >
         Pay Now
       </Button>
     </form>

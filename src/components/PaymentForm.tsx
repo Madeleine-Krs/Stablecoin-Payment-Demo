@@ -33,6 +33,9 @@ export default function PaymentForm({ onPay }: { onPay: (amount: number, coin: s
               borderColor: 'white',
             },
           },
+          '& .MuiOutlinedInput-input': {
+            color: 'white',
+          },
         }}
       />
       <TextField
@@ -51,8 +54,11 @@ export default function PaymentForm({ onPay }: { onPay: (amount: number, coin: s
             },
             '&.Mui-focused fieldset': {
               borderColor: 'white',
-            },
-          }
+            },  
+          },
+          '& .MuiOutlinedInput-input': {
+            color: 'white',
+          },
         }}
       >
         {coins.map((c) => (

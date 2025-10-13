@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PaymentForm from "../components/PaymentForm";
 import TransactionCard from "../components/TransactionCard";
+import PriceDisplay from "../components/PriceDisplay";
 
 export default function Home() {
   const [transaction, setTransaction] = useState<any>(null);
@@ -18,6 +19,7 @@ export default function Home() {
   return (
     <div style={{ padding: "2rem" }}>
       <h1>Stablecoin Payment Demo</h1>
+      <PriceDisplay />
       <PaymentForm onPay={handlePayment} />
       {transaction && <TransactionCard tx={transaction} />}
     </div>

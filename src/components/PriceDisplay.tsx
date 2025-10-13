@@ -38,7 +38,7 @@ export default function PriceDisplay() {
     return (
       <Box sx={{ display: "flex", alignItems: "center", gap: 2, mb: 3 }}>
         <CircularProgress size={20} />
-        <Typography variant="body2" sx={{ color: "white" }}>
+        <Typography variant="body2" sx={{ color: "#333" }}>
           Loading live prices...
         </Typography>
       </Box>
@@ -57,14 +57,14 @@ export default function PriceDisplay() {
 
   return (
     <Box sx={{ mb: 3 }}>
-      <Typography variant="body2" sx={{ color: "white", mb: 1.5 }}>
+      <Typography variant="body2" sx={{ color: "#333", mb: 1.5, fontWeight: 600 }}>
         Live Exchange Rates:
       </Typography>
       <Box sx={{ display: "flex", gap: 1.5, flexWrap: "wrap" }}>
         <Chip
           label={`USDC: $${prices.USDC.toFixed(4)}`}
           sx={{
-            backgroundColor: "rgba(255, 255, 255, 0.1)",
+            backgroundColor: "#1976d2",
             color: "white",
             fontWeight: 500,
           }}
@@ -72,7 +72,7 @@ export default function PriceDisplay() {
         <Chip
           label={`USDT: $${prices.USDT.toFixed(4)}`}
           sx={{
-            backgroundColor: "rgba(255, 255, 255, 0.1)",
+            backgroundColor: "#1976d2",
             color: "white",
             fontWeight: 500,
           }}
@@ -80,7 +80,7 @@ export default function PriceDisplay() {
         <Chip
           label={`DAI: $${prices.DAI.toFixed(4)}`}
           sx={{
-            backgroundColor: "rgba(255, 255, 255, 0.1)",
+            backgroundColor: "#1976d2",
             color: "white",
             fontWeight: 500,
           }}

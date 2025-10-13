@@ -103,7 +103,7 @@ export default function PaymentForm({ onPay }: { onPay: (amount: number, coin: s
         </Button>
       </Box>
       {usdEquivalent && (
-        <Typography variant="body2" sx={{ mt: 1.5, color: 'white', opacity: 0.8 }}>
+        <Typography variant="body2" sx={{ mt: 1.5, color: '#555', fontWeight: 500 }}>
           ≈ ${usdEquivalent} USD
         </Typography>
       )}
